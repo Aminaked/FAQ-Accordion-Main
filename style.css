@@ -1,0 +1,107 @@
+:root{
+ 
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+    --font-family:'Work Sans',sans-serif;
+  
+}
+body{
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--light-pink);
+    font-family: var(--font-family);
+}
+
+.all-container{
+  background-color: var(--white);
+  padding: 5%;
+  margin: 20%;
+  border-radius: 10px;
+ 
+}
+
+.head{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+button{
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--white);
+  border: 0;
+  width: 100%;
+ gap: 1rem;
+ margin: 0px;
+padding: 0px;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+
+p {
+  color: var(--grayish-purple);
+  font-size: 16px;
+  margin: 0px;
+}
+
+hr{
+  border: none;
+  background-color: var(--light-pink);
+  height: 1px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+
+
+
+
+@media (max-width:375px) {
+
+
+
+  body{
+    background-image: url("./assets/images/background-pattern-mobile.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--light-pink);
+   
+  }
+
+
+
+
+  .all-container{
+    background-color: var(--white);
+    margin: 50% 5%;
+    
+    padding: 5%;
+     border-radius: 10px;
+  }
+ 
+  p{
+    font-size: 14px;
+  }
+ 
+}
